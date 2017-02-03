@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>星星</title>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            
+            background: -moz-linear-gradient(top, RGB(0,0,0) 11%, RGB(55,27,77) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, RGB(0,0,0)), color-stop(100%,RGB(55,27,77)));
+            background: -webkit-linear-gradient(top, RGB(0,0,0) 11%,RGB(55,27,77) 100%);
+            background: -o-linear-gradient(top, RGB(0,0,0) 11%,RGB(55,27,77) 100%);
+            background: -ms-linear-gradient(top, RGB(0,0,0) 11%,RGB(55,27,77) 100%);
+            background: linear-gradient(to bottom, RGB(0,0,0) 11%,RGB(55,27,77) 100%);
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+ 
+</head>
+<body>
+    
+<canvas id="myCanvas" width="800" height="600"></canvas>
+
+<script src="js/lib/require.js" data-main="js/main"></script>
+
+<script>
+require(['index'], function (index){
+        console.log(index);
+
+        var c = new index.starrySkyFn("myCanvas");
+        
+　　　　
+　　});
+
+
+</script>
+
+</body>
+</html>
